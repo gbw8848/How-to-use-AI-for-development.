@@ -8,6 +8,7 @@ This repository provides a practical documentation system for AI-assisted softwa
 - `DEVELOPMENT_GUIDE.md`: Defines engineering rules and coding standards (how to build).
 - `DATA_API_CONTRACT.md`: Defines data models and API contracts (how systems agree).
 - `SERVER_DEPLOY_QUICKSTART.md`: Defines deployment and rollback flow (how to ship safely).
+- `docs/TEAM_PRE_DEV_WORKFLOW.md`: Team-ready pre-development process (what to prepare before coding).
 
 ## Recommended workflow
 
@@ -55,3 +56,6 @@ Acceptance Criteria:
 - `DEVELOPMENT_GUIDE.md`
 - `DATA_API_CONTRACT.md`
 - `SERVER_DEPLOY_QUICKSTART.md`
+- `docs/TEAM_PRE_DEV_WORKFLOW.md`
+- `docs/wireframes/`
+- `docs/prototypes/`
