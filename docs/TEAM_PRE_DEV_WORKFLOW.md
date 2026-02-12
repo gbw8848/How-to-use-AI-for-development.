@@ -21,6 +21,12 @@ Use low-fidelity design first, then formal implementation:
 4. Prototypes may include lightweight interaction logic (routing, modal toggle, form validation with mock data, loading/empty/error/success states).
 5. Prototypes must not include real business integration (no production DB, no real auth flow, no complex backend coupling).
 
+When backend stack is known, a target-stack prototype is recommended (for example NestJS + mock data):
+1. Keep real route paths and DTO schemas aligned with `DATA_API_CONTRACT.md`.
+2. Use controllers with mock-backed services (in-memory data or local JSON).
+3. Let frontend integrate these endpoints early to validate interaction flow.
+4. Replace only service/repository implementations later, while keeping API contract stable.
+
 ## 4. Standard Execution Order
 1. Confirm MVP scope boundaries first.
 2. Confirm data models and API contracts next.
@@ -40,6 +46,8 @@ Use low-fidelity design first, then formal implementation:
 - [ ] API request/response is defined in `DATA_API_CONTRACT.md`
 - [ ] Error codes and edge cases are defined
 - [ ] UI wireframe or HTML prototype exists
+- [ ] If target-stack prototype is used, routes and DTOs match `DATA_API_CONTRACT.md`
+- [ ] If target-stack prototype is used, data source is mock and replaceable
 - [ ] Acceptance criteria are testable
 - [ ] Allowed file-change scope is explicit
 
@@ -87,5 +95,6 @@ After finishing work, always provide:
 ## 10. Change Log
 | Date | Version | Change | Author |
 |---|---|---|---|
+| `2026-02-12` | `v0.1.2` | `Add target-stack prototype pattern (NestJS + mock data)` | `Codex` |
 | `2026-02-11` | `v0.1.1` | `Add Global 30% + Local 100% execution rule` | `Codex` |
 | `2026-02-11` | `v0.1.0` | `Initial team workflow` | `Codex` |
